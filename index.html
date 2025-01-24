@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elton Duong</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto Slab"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,16 +17,48 @@
 
     <section id="bio">
       <h2 class="heading : text-3xl font-extrabold">About Me</h2>
-      <img
-        src="images/Temp Image.jpg"
-        alt="My Profile Picture"
-        class="center"
-      />
-      <p class="text-3xl font-extrabold">
-        Hi, I am <span style="color: blue">Elton Duong</span>. You can check out
-        what I am working on this website. My dream job is to be a Machine/Deep
-        Learning Engineering &#128187;
-      </p>
+      <div class="bio-content">
+        <img src="images/Temp Image.jpg" alt="My Profile Picture" />
+        <p>
+          Hi, I am <span style="color: blue">Elton Duong</span>. You can check
+          out what I am working on this website. My dream job is to be a
+          Machine/Deep Learning Engineering &#128187;
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="heading : text-3xl font-extrabold">My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <a
+            href="https://github.com/KhoaDuong2005/Number-identifier/tree/main"
+            target="_blank"
+            class="project-title"
+          >
+            <span>Number Identifier</span>
+          </a>
+          <p>
+            Built a basic number identifier model using
+            <span class="font-extrabold">PyTorch</span> and data processing
+            tools like <span class="font-extrabold">NumPy</span> and
+            <span class="font-extrabold">Pandas</span> for efficient training.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <a href="" class="project-title">
+            <span>title</span>
+          </a>
+          <p>placeholder</p>
+        </div>
+        <div class="project-card">
+          <a href="" class="project-title">
+            <span>title</span>
+          </a>
+          <p>placeholder</p>
+        </div>
+      </div>
     </section>
   </body>
 </html>
