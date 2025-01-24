@@ -6,35 +6,95 @@ body{
 }
 
 h1{
-  background-color: #267fb7;
+  background-color: #1e89cc;
   color: black;
   text-align: center;
   padding: 20px;
 }
 
-#bio{
-  padding: 20px;
-  background-color: #ffffff;
-  margin: 20px 0;
+.heading {
   text-align: center;
+  color: #2e2d2d;
+  margin-bottom: 20px;
+  font-family: 'Roboto Slab';
+  font-size: 60px;
+}
+
+
+#bio {
+  margin: 40px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
 }
 
 #bio img{
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  width: 200px;
 }
 
 #bio p{
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Roboto Slab';
+}
+
+.bio-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+
+
+#projects {
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f4f9;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+#projects a {
+  text-decoration: none;
+  color: #0505e0;
+  font-family: 'Roboto Slab';
+}
+
+#projects p{
+  font-size: 17px;
+  color: #292727;
+  font-family: 'Roboto Slab';
+  margin-top: 10px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* fit 3 project "card" each "line*/
+  gap: 20px; /* make space for each "card of the proejct*/
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  height: 200px;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-title {
   font-size: 30px;
-}
-
-.heading{
-  font-size: 50px;
-}
-
-.center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  font-weight: bold;
+  color: #0073e6;
 }
