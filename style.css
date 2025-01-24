@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  background-color: #267fb7;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
