@@ -12,7 +12,7 @@ h1{
   padding: 20px;
 }
 
-.heading {
+.heading{
   text-align: center;
   color: #2e2d2d;
   margin-bottom: 20px;
@@ -21,7 +21,7 @@ h1{
 }
 
 
-#bio {
+#bio{
   margin: 40px;
   background-color: #f4f4f9;
   border-radius: 8px;
@@ -44,7 +44,7 @@ h1{
   font-family: 'Roboto Slab';
 }
 
-.bio-content {
+.bio-content{
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -53,7 +53,7 @@ h1{
 
 
 
-#projects {
+#projects{
   padding: 20px;
   text-align: center;
   background-color: #f4f4f9;
@@ -61,7 +61,7 @@ h1{
   border-radius: 8px;
 }
 
-#projects a {
+#projects a{
   text-decoration: none;
   color: #0505e0;
   font-family: 'Roboto Slab';
@@ -74,13 +74,13 @@ h1{
   margin-top: 10px;
 }
 
-.projects-grid {
+.projects-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* fit 3 project "card" each "line*/
   gap: 20px; /* make space for each "card of the proejct*/
 }
 
-.project-card {
+.project-card{
   background-color: #fff;
   padding: 25px;
   border-radius: 8px;
@@ -89,12 +89,44 @@ h1{
   flex-direction: column;
 }
 
-.project-card:hover {
+.project-card:hover{
   transform: translateY(-5px);
 }
 
-.project-title {
+.project-title{
   font-size: 30px;
   font-weight: bold;
   color: #0073e6;
 }
+
+
+
+#skills div{
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 40px;
+}
+
+#skills h3{
+  text-align: center;
+  color: #0073e6;
+  font-family: 'Roboto Slab';
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+#skills li{
+  font-size: 20px;
+  color: #292727;
+  margin: 8px;
+  font-family: 'Roboto Slab';
+}
+
