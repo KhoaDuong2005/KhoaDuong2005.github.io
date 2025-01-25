@@ -15,7 +15,7 @@ h1{
 .heading{
   text-align: center;
   color: #2e2d2d;
-  margin-bottom: 20px;
+  margin: 50px;
   font-family: 'Roboto Slab';
   font-size: 60px;
 }
@@ -42,6 +42,15 @@ h1{
   margin-top: 20px;
   text-align: center;
   font-family: 'Roboto Slab';
+}
+
+#bio p span{
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+#bio p span:hover{
+  transform: scale(1.1);
 }
 
 .bio-content{
@@ -102,8 +111,6 @@ h1{
   color: #0073e6;
 }
 
-
-
 #skills div{
   background-color: #fff;
   border-radius: 8px;
@@ -119,6 +126,11 @@ h1{
   font-size: 40px;
   margin-bottom: 10px;
   font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+#skills h3:hover{
+  transform: scale(1.1);
 }
 
 #skills ul {
@@ -134,3 +146,35 @@ h1{
   font-family: 'Roboto Slab';
 }
 
+
+#experience ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* fit 3 project "card" each "line*/
+  gap: 20px; /* make space for each "card of the proejct*/
+}
+
+#experience li{
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  height: 200px;
+  flex-direction: column;
+  box-shadow: grey 0px 20px 30px -10px;
+  font-size: 25px;
+  color: #292727;
+  font-family: 'Roboto Slab';
+  text-align: center;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+#experience li:hover{
+  transform: translateY(-5px);
+}
+
+.break {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
