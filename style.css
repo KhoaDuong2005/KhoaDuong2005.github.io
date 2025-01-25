@@ -20,6 +20,7 @@ h1{
   font-size: 60px;
 }
 
+/* Bio Section */
 
 #bio{
   margin: 40px;
@@ -61,7 +62,7 @@ h1{
 }
 
 
-
+/* Project Section */
 
 #projects{
   padding: 20px;
@@ -111,6 +112,8 @@ h1{
   color: #0073e6;
 }
 
+/* Skill Section */
+
 #skills div{
   background-color: #fff;
   border-radius: 8px;
@@ -146,6 +149,7 @@ h1{
   font-family: 'Roboto Slab';
 }
 
+/* Experience Section */
 
 #experience ul{
   display: grid;
@@ -173,8 +177,92 @@ h1{
   transform: translateY(-5px);
 }
 
-.break {
+.break{
   display: block;
   margin-bottom: 15px;
   font-size: 40px;
 }
+
+/* Education Section */
+
+#education{
+  padding: 50px;
+  border-radius: 8px;
+  margin: 40px auto;
+  text-align: left;
+  width: 80%;
+}
+
+.education-block{
+  background: #fff;
+  box-shadow: grey 0px 20px 30px -10px;
+  border-left: 7px solid #0073e6;
+  padding: 40px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.education-degree{
+  position: relative;
+  padding-bottom: 15px;
+  
+}
+
+.education-degree h3{
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  color: #2e2d2d;
+  font-family: 'Roboto Slab';
+  padding-top: 20px;
+}
+
+#education p {
+  font-size: 25px;
+  margin: 5px 0 0 0;
+  color: #0073e6;
+  font-family: 'Roboto Slab';
+}
+
+
+#education p:before {
+  content: '';
+  position: absolute;
+  left: -54px;
+  top: 39px;
+  width: 20px;
+  height: 20px;
+  background: #0073e6;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #0073e6;
+}
+
+.school{
+  transition: color 0.3s;
+}
+
+.school:hover{
+  color: #0a3f75;
+}
+
+.preview{
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 270px;
+  top: -200px;
+  left: 20px;
+  background-color: white;
+  box-shadow: grey 0px 20px 30px -10px;
+  border-radius: 20%;
+}
+
+
+.school:hover .preview{
+  display: block;
+}
+
+.education-block:hover{
+  transform: scale(1.03);
+}
+
