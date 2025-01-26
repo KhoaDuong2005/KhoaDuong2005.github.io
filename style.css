@@ -266,3 +266,38 @@ h1{
   transform: scale(1.03);
 }
 
+
+
+/* Hobbies section */
+
+#hobbies {
+  border-radius: 15px;
+  max-width: 850px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+#hobbies ul {
+  list-style: none;
+  padding: 100px;
+  margin: 0;
+  background: #fff;
+  box-shadow: grey 0px 20px 30px -10px;
+  border-radius: 15px;
+}
+
+#hobbies ul li {
+  font-size: 30px;
+  color: #2e2d2d;
+  padding: 18px;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+  border-bottom: 1px solid #dfedf0;
+}
+
+
+#hobbies ul li:hover {
+  color: #0073e6;
+  padding-left: 30px;
+}
+
+
