@@ -1,18 +1,17 @@
-body{
+body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
 }
 
-h1{
+h1 {
   background-color: #1e89cc;
-  color: black;
   text-align: center;
   padding: 20px;
 }
 
-.heading{
+.heading {
   text-align: center;
   color: #2e2d2d;
   margin: 50px;
@@ -20,15 +19,25 @@ h1{
   font-size: 60px;
 }
 
+.break { /*end of line*/
+  display: block;
+  margin-bottom: 15px;
+  font-size: 40px;
+} 
+
+section {
+  padding-top: 70px;
+}
+
 /* Bio Section */
 
-#bio{
+#bio {
   margin: 40px;
   background-color: #f4f4f9;
   border-radius: 8px;
 }
 
-#bio img{
+#bio img {
   display: block;
   margin: 0 auto;
   width: 150px;
@@ -36,25 +45,25 @@ h1{
   border-radius: 50%;
 }
 
-#bio p{
+#bio p {
   font-size: 40px;
   font-weight: bold;
-  color: #333;
+  color: #2e2d2d;
   margin-top: 20px;
   text-align: center;
   font-family: 'Roboto Slab';
 }
 
-#bio p span{
+#bio p span {
   transition: transform 0.3s ease;
   display: inline-block;
 }
 
-#bio p span:hover{
+#bio p span:hover {
   transform: scale(1.1);
 }
 
-.bio-content{
+.bio-content {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -64,35 +73,36 @@ h1{
 
 /* Project Section */
 
-#projects{
-  padding: 20px;
+#projects {
   text-align: center;
   background-color: #f4f4f9;
   margin: 20px;
   border-radius: 8px;
-  
+
 }
 
-#projects a{
+#projects a {
   text-decoration: none;
   color: #0073e6;
   font-family: 'Roboto Slab';
 }
 
-#projects p{
+#projects p {
   font-size: 17px;
-  color: #292727;
+  color: #2e2d2d;
   font-family: 'Roboto Slab';
   margin-top: 10px;
 }
 
-.projects-grid{
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* fit 3 project "card" each "line*/
-  gap: 20px; /* make space for each "card of the proejct*/
+  grid-template-columns: repeat(3, 1fr);
+  /* fit 3 project "card" each "line*/
+  gap: 20px;
+  /* make space for each "card of the proejct*/
 }
 
-.project-card{
+.project-card {
   background-color: #fff;
   padding: 25px;
   border-radius: 8px;
@@ -102,11 +112,11 @@ h1{
   box-shadow: grey 0px 20px 30px -10px;
 }
 
-.project-card:hover{
+.project-card:hover {
   transform: translateY(-5px);
 }
 
-.project-title{
+.project-title {
   font-size: 30px;
   font-weight: bold;
   color: #0073e6;
@@ -114,7 +124,7 @@ h1{
 
 /* Skill Section */
 
-#skills div{
+#skills div {
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
@@ -122,7 +132,7 @@ h1{
   box-shadow: grey 0px 20px 30px -10px;
 }
 
-#skills h3{
+#skills h3 {
   text-align: center;
   color: #0073e6;
   font-family: 'Roboto Slab';
@@ -132,7 +142,7 @@ h1{
   transition: transform 0.3s ease;
 }
 
-#skills h3:hover{
+#skills h3:hover {
   transform: scale(1.1);
 }
 
@@ -142,7 +152,7 @@ h1{
   text-align: center;
 }
 
-#skills li{
+#skills li {
   font-size: 20px;
   color: #292727;
   margin: 8px;
@@ -151,13 +161,15 @@ h1{
 
 /* Experience Section */
 
-#experience ul{
+#experience ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* fit 3 project "card" each "line*/
-  gap: 20px; /* make space for each "card of the proejct*/
+  grid-template-columns: repeat(3, 1fr);
+  /* fit 3 project "card" each "line*/
+  gap: 20px;
+  /* make space for each "card of the proejct*/
 }
 
-#experience li{
+#experience li {
   background-color: #fff;
   padding: 30px;
   border-radius: 8px;
@@ -166,34 +178,28 @@ h1{
   flex-direction: column;
   box-shadow: grey 0px 20px 30px -10px;
   font-size: 25px;
-  color: #292727;
+  color: #2e2d2d;
   font-family: 'Roboto Slab';
   text-align: center;
   display: flex;
   margin-bottom: 40px;
 }
 
-#experience li:hover{
+#experience li:hover {
   transform: translateY(-5px);
 }
 
-.break{
-  display: block;
-  margin-bottom: 15px;
-  font-size: 40px;
-}
 
 /* Education Section */
 
-#education{
-  padding: 50px;
+#education {
   border-radius: 8px;
   margin: 40px auto;
   text-align: left;
   width: 80%;
 }
 
-.education-block{
+.education-block {
   background: #fff;
   box-shadow: grey 0px 20px 30px -10px;
   border-left: 7px solid #0073e6;
@@ -202,13 +208,13 @@ h1{
   transition: transform 0.3s;
 }
 
-.education-degree{
+.education-degree {
   position: relative;
   padding-bottom: 15px;
-  
+
 }
 
-.education-degree h3{
+.education-degree h3 {
   font-size: 40px;
   font-weight: bold;
   margin: 0;
@@ -237,15 +243,15 @@ h1{
   box-shadow: 0 0 5px #0073e6;
 }
 
-.school{
+.school {
   transition: color 0.3s;
 }
 
-.school:hover{
+.school:hover {
   color: #0a3f75;
 }
 
-.preview{
+.preview {
   display: none;
   position: absolute;
   width: 300px;
@@ -258,11 +264,12 @@ h1{
 }
 
 
-.school:hover .preview{
+
+.school:hover .preview {
   display: block;
 }
 
-.education-block:hover{
+.education-block:hover {
   transform: scale(1.03);
 }
 
@@ -300,4 +307,167 @@ h1{
   padding-left: 30px;
 }
 
+
+
+#resume {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+#resume a {
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+
+
+
+ul.topnav {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #0073e6;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  z-index: 1;
+}
+
+ul.topnav li {
+  float: left;
+  padding-left: 50px;
+}
+
+
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  font-family: 'Roboto Slab';
+  font-size: 24px;
+  position: relative;
+  transition: transform 0.3s ease;
+  border: 4px solid white;
+  border-radius: 10px;
+}
+
+ul.topnav li a:hover {
+  background-color: #40E0D0;
+  transform: translateX(5px);
+  color: black;
+}
+
+
+
+ul.topnav li.right {
+  float: right;
+  padding-right: 100px;
+}
+
+
+
+
+.contact {
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #181c24;
+  border: 4px solid #40E0D0;
+  border-radius: 15px;
+  padding: 20px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.contact.hidden {
+  display: none;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: -30px;
+  color: white;
+}
+
+.contact label {
+  display: block;
+  margin-top: 30px;
+  font-family: 'Roboto Slab';
+  font-size: 30px;
+  color: white;
+}
+
+.contact input{
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-family: 'Roboto Slab';
+  background-color: white;
+}
+
+.contact textarea {
+  width: 100%;
+  padding: 15px;
+  padding-bottom: 50px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-family: 'Roboto Slab';
+  background-color: white;
+}
+
+.contact textarea::placeholder{
+  top: 0%;
+  right: 0%;
+}
+
+.contact textarea {
+  resize: none;
+}
+
+#closeBtn {
+  background-color: #181c24;
+  color: white;
+  border: 6px solid white;
+  border-radius: 100%;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  margin-top: 10px;
+  position: absolute;
+  right: 50px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+.submitBtn {
+  background-color: #181c24;
+  color: white;
+  border: 5px solid white;
+  padding: 13px 30px;
+  cursor: pointer;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  font-size: 25px ;
+}
+
+
+
+.contact button:hover {
+  background-color: white;
+  color: #181c24;
+}
 
