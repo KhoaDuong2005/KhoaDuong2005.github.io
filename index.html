@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elton Duong</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/2e7bdfd44f.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto Slab"
@@ -14,6 +18,54 @@
     <header>
       <h1 class="text-3xl font-extrabold">My Portfolio</h1>
     </header>
+    <ul class="topnav">
+      <li><a href="#bio">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li class="right"><a href="#contact" id="contactBtn">Contact Me</a></li>
+    </ul>
+
+    <div id="contactSection" class="contact hidden">
+      <button id="closeBtn" class="close-btn">&times;</button>
+      <h2 class="font-extrabold">
+        <i class="fa-solid fa-envelope : break"></i>Contact Me
+      </h2>
+      <form>
+        <label for="name" class="font-extrabold">Your Name:</label>
+        <input
+          class="font-extrabold"
+          type="name"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        />
+        <label for="email" class="font-extrabold">Your Email:</label>
+        <input
+          class="font-extrabold"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br />
+        <label for="message" class="font-extrabold">Your Message:</label>
+        <textarea
+          class="font-extrabold"
+          id="message"
+          name="message"
+          placeholder="Enter your message"
+          required
+        ></textarea>
+        <br />
+        <button class="submitBtn : font-extrabold" type="submit">
+          Send Message <i class="fa-solid fa-envelope"></i>
+        </button>
+      </form>
+    </div>
 
     <section id="bio">
       <h2 class="heading : text-3xl font-extrabold">About Me</h2>
@@ -105,7 +157,7 @@
           <p>
             <a href="https://www.fraseric.ca/" target="_blank" class="school"
               >Fraser International College
-              <img src="images/FIC Logo.jpg" class="preview" alt=""
+              <img src="images/FIC Logo.jpg" class="preview" alt="FIC Logo"
             /></a>
             (2023 - 2024)
           </p>
@@ -115,7 +167,7 @@
           <p>
             <a href="https://www.sfu.ca/" target="_blank" class="school"
               >Simon Fraser University
-              <img src="images/SFU Logo.png" class="preview" alt="" />
+              <img src="images/SFU Logo.png" class="preview" alt="SFU Logo" />
             </a>
             (2024 - Now)
           </p>
@@ -131,5 +183,12 @@
         <li>Gaming 🖥️</li>
       </ul>
     </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <a href="your-resume.pdf" download>Download my resume</a>
+    </section>
+
+    <script src="main.js"></script>
   </body>
 </html>
