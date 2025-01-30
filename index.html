@@ -1,19 +1,43 @@
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3PC4QYY6KC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-3PC4QYY6KC");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elton Duong</title>
+
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
     <script
       src="https://kit.fontawesome.com/2e7bdfd44f.js"
       crossorigin="anonymous"
     ></script>
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto Slab"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="files/favicon_io/" />
+
+    <!--favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="files/favicon_io/apple-touch-icon.png"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -94,7 +118,7 @@
     <section id="bio">
       <h2 class="heading : text-3xl font-extrabold">About Me</h2>
       <div class="bio-content">
-        <img src="images/Temp Image.jpg" alt="My Profile Picture" />
+        <img src="images/Temp Image.jpg" alt="Elton Duong's profile picture" />
         <p>
           Hi, I am <span style="color: #0073e6">Elton Duong</span>. You can
           check out what I am working on this website. My dream job is to be a
@@ -213,6 +237,19 @@
       <a href="your-resume.pdf" download>Download my resume</a>
     </section>
 
+    <footer>
+      <p>Copyright &copy; 2025; Designed by Elton Duong</p>
+      <div class="social-links">
+        <a href="https://github.com/KhoaDuong2005" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/elton-duong-58ba611ba/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
