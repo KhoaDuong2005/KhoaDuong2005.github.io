@@ -577,3 +577,22 @@ ul.topnav li.right {
   }
 }
 
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e89cc;
+  color: white;
+  font-size: 20px;
+}
+
+.social-links a {
+  color: white;
+  margin-left: 6px;
+  font-size: 35px;
+}
+
+.social-links a:hover {
+  color: #40E0D0;
+}
