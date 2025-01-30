@@ -12,3 +12,7 @@ document.getElementById("contactBtn").addEventListener("click", function (event)
 document.getElementById("closeBtn").addEventListener("click", function () {
   toggleContactSection();
 });
+
+document.getElementById('morelink').addEventListener('click', function(event) {
+  event.preventDefault();
+});
