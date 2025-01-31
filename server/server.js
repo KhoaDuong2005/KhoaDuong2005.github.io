@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, "../")));
 
 app.use(express.urlencoded({extended: true}))
 
-mongoose.connect(MONGODB); 
+mongoose.connect(process.env.MONGODB); 
 const db =  mongoose.connection 
 db.once("open", ()=>{ //check if mongodb is connected
     console.log("Mongodb connected succesfuly");
