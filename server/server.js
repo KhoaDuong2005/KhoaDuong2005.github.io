@@ -1,16 +1,27 @@
 const express = require("express")
 const mongoose= require("mongoose")
 const path = require("path")
-const port = 4269
+const cors = require("cors");
+
 require("dotenv").config();
 
+const port = process.env.PORT || 3000;
+
 const app = express();
+
+//add cors 
+app.use(cors({
+    origin: "*",
+    methods: ["POST", "GET"],
+    allowedHeaders: ["Content-Type"]
+}));
 
 // get files
 app.use(express.static(path.join(__dirname, "../")));
 
 
 app.use(express.urlencoded({extended: true}))
+app.use(express.json());
 
 mongoose.connect(process.env.MONGODB); 
 const db =  mongoose.connection 
@@ -38,9 +49,14 @@ app.post("/post", async(req, res)=>{
     })
     await user.save();
     console.log(user);
-    res.send("Message sent successfully")
+    res.json({ success: true, message: 'Message sent successfully' });
 })
 
+
+//test if the server is working or not
+app.get("/", (req, res) => {
+    res.send("Server is up and running!");
+  });
 
 // Checking if the server is started or not
 app.listen(port, ()=>{
