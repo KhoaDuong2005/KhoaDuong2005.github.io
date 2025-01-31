@@ -1,0 +1,26 @@
+{
+  "name": "khoaduong2005.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhoaDuong2005/KhoaDuong2005.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhoaDuong2005/KhoaDuong2005.github.io/issues"
+  },
+  "homepage": "https://github.com/KhoaDuong2005/KhoaDuong2005.github.io#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "nodemon": "^3.1.9",
+    "path": "^0.12.7"
+  }
+}
