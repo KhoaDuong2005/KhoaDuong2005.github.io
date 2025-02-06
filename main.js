@@ -17,6 +17,35 @@ document.getElementById('morelink').addEventListener('click', function(event) {
   event.preventDefault();
 });
 
+//function for navigation bar to appear/disappear on phone screen
+function toggleMenu() {
+  const navMenu = document.getElementById("navMenu");
+  const hamburgerIcon = document.getElementById("hamburgerIcon");
+  const closeIcon = document.getElementById("closeIcon");
+
+  if (navMenu.classList.contains("responsive")) {
+    navMenu.classList.remove("responsive");
+    hamburgerIcon.style.display = "block";
+    closeIcon.style.display = "none";
+  } else {
+    navMenu.classList.add("responsive");
+    hamburgerIcon.style.display = "none";
+    closeIcon.style.display = "block";
+  }
+}
+
+// close the menu when clicked on any section on the menu
+document.querySelectorAll("#navMenu a").forEach(link => {
+  link.addEventListener('click', () => {
+    const navMenu = document.getElementById("navMenu");
+    const hamburgerIcon = document.getElementById("hamburgerIcon");
+    const closeIcon = document.getElementById("closeIcon");
+    navMenu.classList.remove("responsive");
+    hamburgerIcon.style.display = "block";
+    closeIcon.style.display = "none";
+});
+});
+
 
 //submit the data to mongodb
 document.getElementById("contactForm").addEventListener("submit", function (event) {
@@ -51,3 +80,5 @@ document.getElementById("contactForm").addEventListener("submit", function (even
       alert("Error sending message");
     });
 });
+
+

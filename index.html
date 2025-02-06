@@ -1,7 +1,6 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-C59SYL10KY"
@@ -23,7 +22,10 @@
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Elton Duong</title>
 
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
@@ -38,6 +40,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto Slab"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="phonestyle.css" />
 
     <!--favicon-->
     <link
@@ -73,7 +76,13 @@
     <header>
       <h1 class="text-3xl font-extrabold">My Portfolio</h1>
     </header>
-    <ul class="topnav">
+    <ul class="topnav" id="navMenu">
+      <li class="icon">
+        <button onclick="toggleMenu()" id="hamburgerIcon">☰</button>
+        <button onclick="toggleMenu()" id="closeIcon" style="display: none">
+          ✕
+        </button>
+      </li>
       <li><a href="#bio">About Me</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -87,7 +96,6 @@
           <a href="https://github.com/KhoaDuong2005" target="_blank"
             >My GitHub</a
           >
-          <a href="#link3">Link 3</a>
         </div>
       </li>
       <li class="right"><a href="#contact" id="contactBtn">Contact Me</a></li>
@@ -184,8 +192,14 @@
           <p>A small survival prediction model</p>
         </div>
         <div class="project-card">
-          <a href="" class="project-title"> title </a>
-          <p>placeholder</p>
+          <a
+            href="https://github.com/KhoaDuong2005/Federated-Anatomy-Prediction"
+            target="_blank"
+            class="project-title"
+          >
+            Federated Anatomy Prediction (Currently Working)
+          </a>
+          <p></p>
         </div>
       </div>
     </section>
@@ -261,7 +275,7 @@
 
     <section id="resume">
       <h2>Resume</h2>
-      <a href="your-resume.pdf" download>Download my resume</a>
+      <a href="sample-resume.pdf" download>Download my resume</a>
     </section>
 
     <footer>

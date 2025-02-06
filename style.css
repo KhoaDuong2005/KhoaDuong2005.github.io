@@ -596,3 +596,11 @@ footer {
 .social-links a:hover {
   color: #40E0D0;
 }
+
+
+/* Hide menu section (only for phone)*/
+.icon{
+  display: none;
+}
+
+
